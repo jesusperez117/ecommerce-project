@@ -5,46 +5,69 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Majora´s Store</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script
+      src="https://kit.fontawesome.com/4593d00533.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
 
   <body>
-    <img src="imagenes/logo.jpeg" width="50%" alt="Logo" />
+    <div class="centro">
+      <img id="logo" src="imagenes/logo.jpeg" alt="Logo" />
+    </div>
     <section>
       <h1>Majora´s Store</h1>
     </section>
-    <section>
-      <audio
-        controls
-        src="imagenes/51 - Miley Cyrus - Wrecking Ball.mp3"
-      ></audio>
-    </section>
+
     <header>
       <nav>
         <ul>
           <li>
-            <a href="./index.html">Inicio</a>
+            <a href="./index.html"
+              ><i class="fa-solid fa-house-chimney-window"></i
+            ></a>
           </li>
           <li>
-            <a href="./quienes-somos.html">Quienes somos?</a>
+            <a href="./quienes-somos.html"
+              ><i class="fa-solid fa-person-circle-question"></i
+            ></a>
           </li>
           <li>
-            <a href="./xbox.html">Xbox</a>
+            <a href="./xbox.html"><i class="fa-brands fa-xbox">Xbox</i></a>
           </li>
           <li>
-            <a href="./nintendo.html">Nintendo</a>
+            <a href="./nintendo.html"
+              ><img class="icon" src="imagenes/icono.png" alt=""
+            /></a>
           </li>
         </ul>
       </nav>
     </header>
-    <section>
-      <h2>Nuevos Productos</h2>
-    </section>
-    <section>
-      <img src="imagenes/xbox1.jpg" width="50%" alt="xbox1" />
-      <p>Xbox series X/S</p>
-    </section>
-    <aside>
-      <p>Consolas de edición especial sujetas a disponibilidad</p>
-    </aside>
+    <div>
+      <h3 id="nv">Nuevos Productos</h3>
+    </div>
+    <div>
+      <img class="xb" src="imagenes/xbox1.jpg" width="50%" alt="xbox1" />
+      <p class="nv">Xbox series X/S</p>
+    </div>
+    <div class="der">
+      <img id="nOled" src="imagenes/oled1.jpg" alt="switcholed1" />
+      <p>Nintendo Switch Oled Edición Splatoon</p>
+    </div>
+    <div>
+      <h3 id="nj">Nuevos Juegos</h3>
+    </div>
+    <div class="centro">
+      <img class="pok" src="imagenes/EP.jpg" alt="pokemon" />
+      <p>Pokemon</p>
+    </div>
+    <div class="centro">
+      <img class="pok" src="imagenes/bay.jpg" alt="bayonetta" />
+      <p>Bayonetta 3</p>
+    </div>
   </body>
+  <footer>
+    <h6>Todos los derechos reservados</h6>
+  </footer>
 </html>
