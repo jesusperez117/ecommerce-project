@@ -13,58 +13,101 @@
   </head>
 
   <body>
-    <div class="centro">
+    <div class="centro"> 
+      <h1>Majora´s Store</h1>
       <img id="logo" src="imagenes/logo.jpeg" alt="Logo" />
     </div>
-    <section>
-      <h1>Majora´s Store</h1>
-    </section>
 
     <header>
+      <div class="busq">
+        <input type="text" name="busqueda" id="busqueda" placeholder="Buscar" />
+        <button class="boton1">Buscar</button>
+        <a href="./carrito.html"><i class="fa-solid fa-cart-shopping"></i></a>
+      </div>
       <nav>
-        <ul>
-          <li>
-            <a href="./index.html"
-              ><i class="fa-solid fa-house-chimney-window"></i
-            ></a>
-          </li>
-          <li>
-            <a href="./quienes-somos.html"
-              ><i class="fa-solid fa-person-circle-question"></i
-            ></a>
-          </li>
-          <li>
-            <a href="./xbox.html"><i class="fa-brands fa-xbox">Xbox</i></a>
-          </li>
-          <li>
-            <a href="./nintendo.html"
-              ><img class="icon" src="imagenes/icono.png" alt=""
-            /></a>
-          </li>
-        </ul>
+        <div class="nav">
+          <div class="barra">
+            <a href="./index.html"><i class="fa-solid fa-house-chimney-window"></i></a>
+          </div>
+          <div class="barra">
+            <a href="./quienes-somos.html"> <i class="fa-solid fa-person-circle-question"></i></a>
+          </div>
+          <div class="barra">
+          <a href="./xbox.html"><i class="fa-brands fa-xbox">Xbox</i></a>  
+          </div>
+          <div class="barra">
+          <a href="./nintendo.html"><img class="icon" src="imagenes/icono.png" alt="nin"/></a>
+          </div>
+        </div>
       </nav>
     </header>
     <div>
       <h3 id="nv">Nuevos Productos</h3>
     </div>
+    <div class="gridCont">
+      <div class="item1">
+        <img class="xb" src="imagenes/xbox1.jpg" width="50%" alt="xbox1" />
+      </div>
+      <div class="itemxbox">
+        <p class="text">
+          Disfruta de una velocidad y rendimiento de nueva generación con nuestra biblioteca digital más grande hasta la fecha.
+        </p>
+      </div>
+      <div class="item2">
+        <img id="nOled" src="imagenes/oled1.jpg" alt="switcholed1" />
+      </div>
+      <div class="itemNin">
+        <p class="text">La nueva consola cuenta con una vibrante pantalla OLED de 7 pulgadas (17.78 cm), un soporte ajustable y amplio, una base con puerto LAN para conexión por cable, almacenamiento interno de 64 GB y audio mejorado.</p>
+      </div>
+      <div class="item3">
+        <h3 id="nj">Nuevos Juegos</h3>
+        <img class="fond" src="/imagenes/fondo.webp" alt="">
+      </div>
+      <div class="item4">
+        <img class="pok" src="imagenes/EP.jpg" alt="pokemon" />
+      </div>
+      <div class="item5">
+        <img class="pok" src="imagenes/bay.jpg" alt="bayonetta" />
+      </div>
+      <div class="item6">
+        <button class="boton2">Comprar</button>
+      </div>
+      <div class="item7">
+        <button class="boton3">Comprar</button>
+      </div>
+    </div>
     <div>
-      <img class="xb" src="imagenes/xbox1.jpg" width="50%" alt="xbox1" />
-      <p class="nv">Xbox series X/S</p>
+      <h2 class="centro">Ingresa tus datos para mantenerte informado</h2>
     </div>
-    <div class="der">
-      <img id="nOled" src="imagenes/oled1.jpg" alt="switcholed1" />
-      <p>Nintendo Switch Oled Edición Splatoon</p>
-    </div>
+    <main>
+      <div class="form">
+        <form>
+        <label for="">Nombre</label>
+        <input type="text" name="" id="" />
+        <label for="">Apellido</label>
+        <input type="text" name="" id="" />
+        <input type="text" name="" id="" />
+        <label for="">Email</label>
+        <input type="text" name="" id="" />
+        <label for="">Dirección</label>
+        <input type="text" name="" id="" />
+        <button class="boton3">Enviar</button>
+      </form> 
+      </div>
+    </main>
     <div>
-      <h3 id="nj">Nuevos Juegos</h3>
+      <h2 class="centro">Visitanos</h2>
     </div>
-    <div class="centro">
-      <img class="pok" src="imagenes/EP.jpg" alt="pokemon" />
-      <p>Pokemon</p>
-    </div>
-    <div class="centro">
-      <img class="pok" src="imagenes/bay.jpg" alt="bayonetta" />
-      <p>Bayonetta 3</p>
+    <div class="map">
+      <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10250.385896744148!2d-98.43136494781164!3d19.267734334545583!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85e9668890e28341%3A0xfbc07aea7c29f76a!2sNaranjita!5e0!3m2!1ses!2smx!4v1669009400094!5m2!1ses!2smx"
+            width="400"
+            height="300"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
     </div>
   </body>
   <footer>

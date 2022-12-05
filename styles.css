@@ -1,8 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Fira+Sans&family=Ubuntu&display=swap');
-</style>
 
-font-family: 'Fira Sans', sans-serif;
-font-family: 'Ubuntu', sans-serif;
+/*font-family: 'Fira Sans', sans-serif;
+font-family: 'Ubuntu', sans-serif;*/
 *{
     margin: 0;
     padding:0;
@@ -15,28 +14,98 @@ font-family: 'Ubuntu', sans-serif;
 h1{
     text-align: center;
     font-size: 2rem;
+    color: #ffffff;
+    position: relative;
+    top: 210px;  
+}
+.busq{
+    display: flex;
+    position: relative;
+    left: 70rem;
+    flex-grow: 0;
+    flex-shrink: 1;
+    padding: 5px;
+}
+.boton1{
+    border:1px solid  #5f5b5b;
+    color: white;
+    background-color: #8a8888;
+}
+.boton1:hover{
+    color: white;
+    background-color: rgb(189, 221, 176);
 }
 .centro{
     text-align: center;   
+    padding: 2rem;
 }
-nav{
+.nav{
     text-align: center;
     font-size: 1.2rem;
-    border: 2px solid rgb(199, 127, 183);
     border-radius: 100px;
+    display: flex;
+    background-color: #b86ece52;
+    flex-direction: column;
+    flex-grow: 0;
+    flex-shrink: 1;
+}
+.barra{
+    list-style: none;
 }
 .icon{
     width: 1.1rem;
-    color: green;
 }
 .border{
-    border-radius: 20px;
+    t-radius: 20px;
     border: 2px solid;
     border-color: #EBE1EE;
 }
 #nv{
     text-align: center;
     font-size: 1.5rem;
+    color: #1f0a1e;
+}
+.gridCont{
+    border: 1px solid #7332af;
+    display: grid;
+    grid-template-areas: 
+    "item1 itemXbox ."
+    " . item2 itemNin"
+    " item4 item3 item5 "
+    "item6 . item7";
+    gap: 40px;
+    padding:5px;
+}
+.gridCont>div{
+    display: flex;
+    justify-content: center;
+}
+.item1{
+    grid-area: item1;
+}
+.itemXbox{
+    grid-area: itemxbox;
+}
+.item2{
+    grid-area: item2;
+}
+.itemNin{
+    grid-area: itemNin;
+}
+.item3{
+    grid-area: item3;
+}
+.item4{
+    grid-area: item4;
+}
+.item5{
+    grid-area: item5;
+}
+.item6{
+    grid-area: item6;
+}
+.item7{
+    grid-area: item7;
 }
 .xb{
     text-align: left;
@@ -49,14 +118,52 @@ nav{
     text-align: right;
 }
 #nj{
-    text-align: center;
-    font-size: 1.5rem;
+    font-size: 1.6rem;
+    color: #ffffff;
+    position: relative;
+    top: 160px; 
+    left:300px;
 }
 .pok{
     text-align: center;
     width: 20rem;
     border-radius: 20px;
 }
+.boton2{
+    border:1px solid  #5f5b5b;
+    color: white;
+    background-color: #8a8888;
+}
+.boton2:hover{
+    color: white;
+    background-color: rgb(223, 114, 114);
+}
+.boton3{
+    border:1px solid  #5f5b5b;
+    color: white;
+    background-color: #8a8888;
+}
+.boton3:hover{
+    color: white;
+    background-color: rgb(223, 114, 114);
+}
+.fond{
+    width: 25rem;
+}
 h6{
     text-align: right;
+}
+.text{
+    text-align: justify;
+    position: relative;
+    bottom: -60px;
+}
+.form{
+    display: flex;
+    flex-grow: 1;
+    flex-shrink: 1;
+}
+.map{
+    display: flex;
+    justify-content: center;
 }
