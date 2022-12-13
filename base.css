@@ -1,0 +1,95 @@
+header div .logo1 {
+  display: flex;
+  justify-content: center;
+}
+header div .logo {
+  width: 30rem;
+  padding: 1rem;
+}
+header nav {
+  font-size: 1rem;
+}
+
+nav .barra {
+  width: 2rem;
+}
+
+body {
+  font-family: "Fira Sans", sans-serif;
+  background-color: rgb(247, 232, 250);
+}
+body div .np, body div h2 {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  font-size: 2rem;
+  color: white;
+  background: #ba8de3;
+  background: linear-gradient(200deg, red, purple, orange, blue);
+}
+body div .carousel-inner {
+  display: flex;
+  justify-items: center;
+  align-items: center;
+}
+body div .car1, body div .car3, body div .car2 {
+  width: 30rem;
+  padding: 1rem;
+}
+body div .gridCont {
+  border: 1px solid #7332af;
+  display: grid;
+  grid-template-areas: "item1 itemXbox ." " . item2 itemNin";
+  gap: 40px;
+  padding: 5px;
+}
+body div .gridCont .gridCont > div {
+  display: flex;
+  justify-content: center;
+}
+body div .gridCont div .item1 {
+  grid-area: item1;
+}
+body div .gridCont div .item1 .xb {
+  width: 3rem;
+}
+body div div .itemxbox {
+  grid-area: itemxbox;
+}
+body div div .itemxbox .texto, body div div .itemxbox .itemNin .text2, body div div .itemNin .itemxbox .text2 {
+  justify-content: center;
+  text-align: justify;
+}
+body div div .item2 #nOled {
+  width: 18rem;
+}
+body div div .itemNin {
+  grid-area: itemNin;
+}
+main form .datos, main form .datos2, main form .datos1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-grow: 1;
+  flex-shrink: 1;
+  padding: 2px;
+  width: 30rem;
+}
+main form .boton1 {
+  background-color: rgb(223, 239, 250);
+  width: 3rem;
+  padding: 0;
+  margin: 5px;
+  color: rgb(0, 0, 0);
+}
+
+footer .map {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+footer h6 {
+  text-align: right;
+}
+
+/*# sourceMappingURL=base.css.map */

@@ -5,51 +5,86 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Majora´s Store</title>
-    <link rel="stylesheet" href="styles.css" />
     <script
       src="https://kit.fontawesome.com/4593d00533.js"
       crossorigin="anonymous"
     ></script>
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="./base.css">
+
+
   </head>
 
   <body>
-    <div class="centro"> 
-      <h1>Majora´s Store</h1>
-      <img id="logo" src="imagenes/logo.jpeg" alt="Logo" />
-    </div>
-
     <header>
-      <div class="busq">
-        <input type="text" name="busqueda" id="busqueda" placeholder="Buscar" />
-        <button class="boton1">Buscar</button>
-        <a href="./carrito.html"><i class="fa-solid fa-cart-shopping"></i></a>
+      <div class="logo1"> 
+        <img class="logo" src="imagenes/logo.jpeg" alt="Logo" />
       </div>
-      <nav>
-        <div class="nav">
-          <div class="barra">
-            <a href="./index.html"><i class="fa-solid fa-house-chimney-window"></i></a>
-          </div>
-          <div class="barra">
-            <a href="./quienes-somos.html"> <i class="fa-solid fa-person-circle-question"></i></a>
-          </div>
-          <div class="barra">
-          <a href="./xbox.html"><i class="fa-brands fa-xbox">Xbox</i></a>  
-          </div>
-          <div class="barra">
-          <a href="./nintendo.html"><img class="icon" src="imagenes/icono.png" alt="nin"/></a>
+      
+      <nav class="barra navbar navbar-expand-lg bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="./index.html">Majora´s Store</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="true" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" href="./xbox.html"">Xbox</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./nintendo.html">Nintendo</a>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Buscar</button>
+              <button class="btn btn-outline-success" type="submit"><i class="fa-solid fa-cart-shopping"></i></button>
+            </form>
           </div>
         </div>
-      </nav>
+      </nav>    
     </header>
+
     <div>
-      <h3 id="nv">Nuevos Productos</h3>
+      <h3 class="np">Nuevos Productos</h3>
     </div>
+
+    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="imagenes/bay.jpg" class="car1 d-block" alt="Bayonetta">
+        </div>
+        <div class="carousel-item">
+          <img src="imagenes/EP.jpg" class="car2 d-block" alt="Pokemon">
+        </div>
+        <div class="carousel-item">
+          <img src="imagenes/fondo.webp" class="car3 d-block" alt="Minecraft">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
     <div class="gridCont">
       <div class="item1">
-        <img class="xb" src="imagenes/xbox1.jpg" width="50%" alt="xbox1" />
+        <img class="xb" src="imagenes/xbox1.jpg" alt="xbox1" />
       </div>
       <div class="itemxbox">
-        <p class="text">
+        <p class="texto">
           Disfruta de una velocidad y rendimiento de nueva generación con nuestra biblioteca digital más grande hasta la fecha.
         </p>
       </div>
@@ -57,47 +92,41 @@
         <img id="nOled" src="imagenes/oled1.jpg" alt="switcholed1" />
       </div>
       <div class="itemNin">
-        <p class="text">La nueva consola cuenta con una vibrante pantalla OLED de 7 pulgadas (17.78 cm), un soporte ajustable y amplio, una base con puerto LAN para conexión por cable, almacenamiento interno de 64 GB y audio mejorado.</p>
-      </div>
-      <div class="item3">
-        <h3 id="nj">Nuevos Juegos</h3>
-        <img class="fond" src="/imagenes/fondo.webp" alt="">
-      </div>
-      <div class="item4">
-        <img class="pok" src="imagenes/EP.jpg" alt="pokemon" />
-      </div>
-      <div class="item5">
-        <img class="pok" src="imagenes/bay.jpg" alt="bayonetta" />
-      </div>
-      <div class="item6">
-        <button class="boton2">Comprar</button>
-      </div>
-      <div class="item7">
-        <button class="boton3">Comprar</button>
+        <p class="texto2">La nueva consola cuenta con una vibrante pantalla OLED de 7 pulgadas (17.78 cm), un soporte ajustable y amplio, una base con puerto LAN para conexión por cable, almacenamiento interno de 64 GB y audio mejorado.</p>
       </div>
     </div>
+
     <div>
       <h2 class="centro">Ingresa tus datos para mantenerte informado</h2>
     </div>
     <main>
-      <div class="form">
-        <form>
-        <label for="">Nombre</label>
-        <input type="text" name="" id="" />
-        <label for="">Apellido</label>
-        <input type="text" name="" id="" />
-        <input type="text" name="" id="" />
-        <label for="">Email</label>
-        <input type="text" name="" id="" />
-        <label for="">Dirección</label>
-        <input type="text" name="" id="" />
-        <button class="boton3">Enviar</button>
-      </form> 
-      </div>
+      <form class="preg">
+        <div class="datos mb-3">
+          <label for="exampleInputEmail1" class="form-label">Nombre</label>
+          <input type="name" class="form-control" id="exampleInputEmail1" aria-describedby="">
+        </div>
+        <div class="datos1 mb-3">
+          <label for="exampleInputEmail1" class="form-label">Apellidos</label>
+          <input type="apll" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+          <input type="apll" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+        </div>
+        <div class="datos2 mb-3">
+          <label for="exampleInputEmail1" class="form-label">Correo</label>
+          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="">
+        </div>
+        <div>
+        <button type="submit" class="boton1 btn btn-primary">Enviar</button>  
+        </div>
+
+        
+      </form>
     </main>
     <div>
       <h2 class="centro">Visitanos</h2>
     </div>
+
+  </body>
+  <footer>
     <div class="map">
       <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10250.385896744148!2d-98.43136494781164!3d19.267734334545583!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85e9668890e28341%3A0xfbc07aea7c29f76a!2sNaranjita!5e0!3m2!1ses!2smx!4v1669009400094!5m2!1ses!2smx"
@@ -109,8 +138,7 @@
             referrerpolicy="no-referrer-when-downgrade"
           ></iframe>
     </div>
-  </body>
-  <footer>
+
     <h6>Todos los derechos reservados</h6>
   </footer>
 </html>

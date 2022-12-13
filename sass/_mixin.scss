@@ -1,0 +1,10 @@
+@mixin botonP ($ancho, $colorfondo) {
+        background-color: $colorfondo;
+        width: $ancho;
+        padding:0; 
+        margin:5px ;
+        color: rgb(0, 0, 0);
+}
+@mixin fondo{
+        background-color: rgb(247, 232, 250);
+}

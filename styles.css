@@ -1,78 +1,22 @@
 @import url('https://fonts.googleapis.com/css2?family=Fira+Sans&family=Ubuntu&display=swap');
 
-/*font-family: 'Fira Sans', sans-serif;
-font-family: 'Ubuntu', sans-serif;*/
-*{
-    margin: 0;
-    padding:0;
-    font-family: 'Fira Sans', sans-serif; 
-}
-#logo{
-    width: 25rem;
-    text-align: center;
-}
-h1{
-    text-align: center;
-    font-size: 2rem;
-    color: #ffffff;
-    position: relative;
-    top: 210px;  
-}
-.busq{
+.logo1{
     display: flex;
-    position: relative;
-    left: 70rem;
-    flex-grow: 0;
-    flex-shrink: 1;
-    padding: 5px;
-}
-.boton1{
-    border:1px solid  #5f5b5b;
-    color: white;
-    background-color: #8a8888;
-}
-.boton1:hover{
-    color: white;
-    background-color: rgb(189, 221, 176);
-}
-.centro{
-    text-align: center;   
-    padding: 2rem;
-}
-.nav{
-    text-align: center;
-    font-size: 1.2rem;
-    border-radius: 100px;
-    display: flex;
-    background-color: #b86ece52;
-    flex-direction: column;
-    flex-grow: 0;
-    flex-shrink: 1;
-}
-.barra{
-    list-style: none;
-}
-.icon{
-    width: 1.1rem;
-}
-.border{
-    t-radius: 20px;
-    border: 2px solid;
-    border-color: #EBE1EE;
-}
-#nv{
-    text-align: center;
-    font-size: 1.5rem;
-    color: #1f0a1e;
-}
+    justify-content: center;
+    align-items: center;
+    }
+    h1{
+        position: relative;
+        font-size: 2rem;
+        color: #ffffff;
+        top: 10rem;   
+        left: 20rem;
+    }
 .gridCont{
-    border: 1px solid #7332af;
     display: grid;
     grid-template-areas: 
-    "item1 itemXbox ."
-    " . item2 itemNin"
-    " item4 item3 item5 "
-    "item6 . item7";
+    "item1 itemXbox"
+    "item2 itemNin";
     gap: 40px;
     padding:5px;
 }
@@ -80,90 +24,49 @@ h1{
     display: flex;
     justify-content: center;
 }
-.item1{
-    grid-area: item1;
-}
-.itemXbox{
-    grid-area: itemxbox;
-}
-.item2{
-    grid-area: item2;
-}
-.itemNin{
-    grid-area: itemNin;
-}
-.item3{
-    grid-area: item3;
-}
-.item4{
-    grid-area: item4;
-}
-.item5{
-    grid-area: item5;
-}
-.item6{
-    grid-area: item6;
-}
-.item7{
-    grid-area: item7;
-}
-.xb{
-    text-align: left;
-    width: 20rem;
-}
+
 #nOled{
     width: 18rem;
 }
-.der{
-    text-align: right;
-}
-#nj{
-    font-size: 1.6rem;
-    color: #ffffff;
-    position: relative;
-    top: 160px; 
-    left:300px;
-}
-.pok{
-    text-align: center;
+.xb{
     width: 20rem;
-    border-radius: 20px;
 }
-.boton2{
-    border:1px solid  #5f5b5b;
-    color: white;
-    background-color: #8a8888;
-}
-.boton2:hover{
-    color: white;
-    background-color: rgb(223, 114, 114);
-}
-.boton3{
-    border:1px solid  #5f5b5b;
-    color: white;
-    background-color: #8a8888;
-}
-.boton3:hover{
-    color: white;
-    background-color: rgb(223, 114, 114);
-}
-.fond{
-    width: 25rem;
-}
-h6{
-    text-align: right;
-}
-.text{
+.texto{
     text-align: justify;
-    position: relative;
-    bottom: -60px;
 }
-.form{
-    display: flex;
-    flex-grow: 1;
-    flex-shrink: 1;
-}
-.map{
-    display: flex;
-    justify-content: center;
-}
+
+@media only screen and (min-width: 320px) and 
+(max-width: 500px){
+    .barra{
+        flex-direction: row;
+        width:31rem;
+    }
+    .logo{
+        width: 10rem;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+    }
+    .gridCont{
+        display: none;
+    }
+} 
+@media only screen and (min-width: 500px) and 
+(max-width: 1000px){
+    .barra{
+        font-size: 1.5rem;
+    }
+    .preg{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .texto{
+        font-size: 1.5rem;
+    }
+    .texto2{
+        font-size: 1.5rem;
+        text-align: justify;
+    }
+
+} 

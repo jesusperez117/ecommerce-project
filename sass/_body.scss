@@ -1,0 +1,87 @@
+body{
+    font-family: 'Fira Sans', sans-serif; 
+    @include fondo;
+    div{
+            .np{
+                display: flex;
+                text-align: center;
+                justify-content: center;
+                font-size: 2rem;
+                color: white;
+                background: #ba8de3;
+                background: linear-gradient(200deg,red,purple,orange,blue);
+            }
+    }
+    div{
+        .carousel-inner{
+            display: flex;
+            justify-items: center;
+            align-items: center;
+        }
+        .car1{
+            width: 30rem;
+            padding: 1rem;
+        }
+        .car2{
+            @extend .car1;
+        }
+        .car3{
+            @extend .car1;
+        }
+        }
+
+        div{
+            .gridCont{
+            border: 1px solid #7332af;
+            display: grid;
+            grid-template-areas: 
+            "item1 itemXbox ."
+            " . item2 itemNin";
+            gap: 40px;
+            padding:5px;
+            .gridCont>div{
+            display: flex;
+            justify-content: center;
+}
+        div{
+            .item1{
+                grid-area: item1;
+                .xb{
+                    width: 3rem;
+                }
+            }
+        } 
+            }
+        div{
+            .itemxbox{
+                grid-area: itemxbox;
+
+                .texto{
+                    justify-content: center;
+                    text-align: justify;
+                }
+            }
+        }
+        div{
+            .item2{
+                #nOled{
+                    width: 18rem;
+                }
+            }
+        }
+        div{
+            .itemNin{
+                grid-area: itemNin;
+                .text2{
+                    @extend .texto;
+                }
+            }
+        }
+        }
+        div{
+            h2{
+                
+                @extend .np;
+            }
+        }
+    }

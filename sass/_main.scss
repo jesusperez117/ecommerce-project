@@ -1,0 +1,23 @@
+main{
+    form{
+        .datos{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-grow: 1;
+            flex-shrink: 1; 
+            padding: 2px;
+            width: 30rem;
+            }
+        .datos1{
+    @extend .datos;
+            }
+        .datos2{
+        @extend .datos;
+            }
+    .boton1{
+        @include botonP(3rem, rgb(223, 239, 250));
+} 
+    }
+
+}
